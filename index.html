@@ -15,18 +15,170 @@
                 <img src="logo-unibook2.png" id="p-logo" style="height: 100px;" />
                 <!--- <p id="p-logo">UniBook</p> --->
             </div>
+            <div class="box-busca">
+                <div class="search-box">
+                    
+                    <form method="post" action="#">
+                        <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                        <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
+                    
+                    </form>
+                    
+                </div><!-- Search -->
+            
+            </div><!--Box Busca-->
                 <ul id="ul">
                     <li class="li">
                         <a href="#home" class="link">Home</a>
                     </li>
                     <li class="li">
-                        <a href="#projects" class="link">Categorias</a>
+                        <div class="link-proj">
+                          <a href="index2.html#projectos" id="projects" class="link">Livros</a>
+                          <a class="link"> <i id="icon-proj" class="fa-solid fa-chevron-down" class="link"></i> </a>
+                        </div>
+                        <!--Subdivisão das categorias dos projetos-->
+                        <ul id="exibir-categorias">
+                          <li class="linkCat"><a href="" style="color:#ee7f1e;">Educação</a></li>
+                          <li class="linkCat"><a href="" style="color: #c63c3c;">Saúde</a></li>
+                          <li class="linkCat"><a href="" style="color: rgb(43, 174, 226);">Tecnologia</a></li>
+                          <li class="linkCat"><a href="" style="color: #47b433;">Ambiental</a></li>
+                          <li class="linkCat"><a href="" style="color: #e2d638;">Finanças</a></li>
+                          <li class="linkCat"><a href="" style="color: #dd31b2;">Entretenimento</a></li>
+                          <li class="linkCat"><a href="" style="color: #807f7f;">Segurança</a></li>
+                          <li class="linkCat"><a href="" style="color: #815ed8;">Outros</a></li>
+                        </ul>
                     </li>
                     <li class="li">
-                        <a href="" class="link" id="button"><button>Entrar</button></a>
+                          <i class="fa-regular fa-star" style="color: rgb(227, 111, 48);"></i>
                     </li>
+                    <li class="li">
+                        <i class="fa-solid fa-cart-shopping" style="color:#807f7f"></i>
+                    </li>
+                    <li class="li">
+                        <div class="link-proj">
+                          <a href="#" id="perfil" class="link">Perfil </a>
+                          <a href="#" id="perfil" class="link"> <i id="icon-perfil" class="fa-solid fa-user" class="link" style="padding-left: 10px;"></i>
+                          </a>
+                        </div>
+                        <!--Opções para postar, fazer pedido e sair da conta-->
+                        <ul id="exibir-opcoes" class="opcoes-menu">
+                          <li class="linkOp"><a href="perfil.html" target="_blank">Anunciar</a></li>
+                          <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
+                        </ul>
+                      </li>
                 </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="home" id="home">
+          <div class="text-home">
+            <h1>Viaje sem sair de casa</h1>
+            <p>Aqui, economize dinheiro e ganhe conhecimento.</p>
+          </div>
+          <div class="img-home">
+            <img src="img-home-pp.png"/>
+          </div>
+        </section>
+
+        <section class="catalogos">
+            <h2 style="text-align: center; padding-top: 50px;">Catálogo de Produtos</h2>
+            <div class="grid-container-catalogo">
+                <div class="grid-item-c">
+                    <h6>TÍTULO DO LIVRO</h6>
+                    <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
+                    <button>Ver mais</button>
+                </div>
+                <div class="grid-item-c">
+                    <h6>TÍTULO DO LIVRO</h6>
+                    <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
+                    <button>Ver mais</button>
+                </div>
+                <div class="grid-item-c">
+                    <h6>TÍTULO DO LIVRO</h6>
+                    <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
+                    <button>Ver mais</button>
+                </div>
+                <div class="grid-item-c">
+                    <h6>TÍTULO DO LIVRO</h6>
+                    <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
+                    <button>Ver mais</button>
+                </div>
+            </div>
+            <p class="btn-vermais" style="background-color: rgb(124, 122, 122); text-align: center; border-radius: 2px; width: 100%; padding: 5px; color: white; font-size: 1rem;">Mais produtos</p>
+        </section>
+
+        <section class="categorias">
+            <h2 style="text-align: center; padding-top: 50px;">Categorias dos Produtos</h2>
+            <div class="grid-container-categoria">
+                <div class="grid-item-g">
+                    <h6 style="color: rgb(83, 43, 205);">Acadêmicos</h6>
+                    <i class="fa-solid fa-book" style="color: rgb(83, 43, 205); font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #a6c715;">Biografias</h6>
+                    <i class="fa-solid fa-user" style="color: #a6c715; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #94147f;">Contos</h6>
+                    <i class="fa-solid fa-crown" style="color: #94147f; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #944e14;">Poesias</h6>
+                    <i class="fa-solid fa-pencil" style="color: #944e14; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #cb831e;">Romances</h6>
+                    <i class="fa-solid fa-heart" style="color: #cb831e; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #189414;">Motivacionais</h6>
+                    <i class="fa-solid fa-clover" style="color: #189414; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #140443;">Religiosos</h6>
+                    <i class="fa-solid fa-earth-americas" style="color: #140443; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #0a4726;">Fábulas</h6>
+                    <i class="fa-solid fa-otter" style="color: #0a4726; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: rgb(216, 24, 168);">Novelas</h6>
+                    <i class="fa-solid fa-tv" style="color: rgb(216, 24, 168); font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #5e5453;">Suspense</h6>
+                    <i class="fa-solid fa-ghost" style="color: #5e5453; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #710a78;">Estrangeiro</h6>
+                    <i class="fa-solid fa-film" style="color: #710a78; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+                <div class="grid-item-g">
+                    <h6 style="color: #942114;">Fantasias</h6>
+                    <i class="fa-brands fa-fort-awesome" style="color: #942114; font-size: 3.5rem; padding-top: 30px;"></i>
+                    <p class="p1">></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>₢2023</p>
+        <img src="logo-unibook2.png">
+    </footer>    
+
 </body>
+    <script src="script.js"></script>
 </html>
