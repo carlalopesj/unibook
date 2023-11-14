@@ -89,6 +89,19 @@
                                       <input type="file" id="arquivo" name="arquivo">
                                     </form>
                                   </div>
+                                  <form style="padding-top: 20px;">
+                                    <label>
+                                        <input type="radio" name="opcao" value="venda"> Venda
+                                    </label>
+                                
+                                    <label>
+                                        <input type="radio" name="opcao" value="troca"> Troca
+                                    </label>
+                                
+                                    <label>
+                                        <input type="radio" name="opcao" value="ambos"> Ambos
+                                    </label>
+                                  </form>
                                   <div class="fazer-upload-demanda">
                                     <button class="btn-demanda">Enviar</button>
                                   </div>
@@ -108,6 +121,7 @@
             width: auto;
             border: 2px solid black;">
             <button class="btn-comprar">Comprar</button>
+            <button class="btn-comprar" style="background-color:rgb(199, 146, 21)">Trocar</button>
         </div>
         <div class="preco-chat">
             <p style="padding-top: 50px; padding-bottom: 50px; font-size: 1.5rem;">R$00.00</p>
@@ -124,10 +138,10 @@
                 </div>
               </div>
             <div class="fav-item" style="padding-bottom: 20px;">
-                <p style="color: rgb(227, 197, 48);">Favoritar</p><i class="fa-regular fa-star" style="color: rgb(227, 197, 48);"></i>
+                <p style="color: rgb(227, 197, 48); cursor: pointer;">Favoritar</p><i class="fa-regular fa-star" style="color: rgb(227, 197, 48); cursor: pointer;"></i>
             </div>
             <div class="fav-item" style="padding-top: 20px; background-color:#807f7f; border-radius: 8px; padding: 10px;">
-                <p style="color: white;">Carrinho</p><i class="fa-solid fa-cart-shopping" style="color:#f4f0f0"></i>
+                <p style="color: white; cursor: pointer;">Carrinho</p><i class="fa-solid fa-cart-shopping" style="color:#f4f0f0; cursor: pointer;"></i>
             </div>
         </div>
     </main>
