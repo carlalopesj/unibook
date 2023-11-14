@@ -15,18 +15,10 @@
                 <img src="logo-unibook2.png" id="p-logo" style="height: 100px;" />
                 <!--- <p id="p-logo">UniBook</p> --->
             </div>
-            <div class="box-busca">
-                <div class="search-box">
-                    
-                    <form method="post" action="#">
-                        <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
-                        <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
-                    
-                    </form>
-                    
-                </div><!-- Search -->
-            
-            </div><!--Box Busca-->
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Digite sua pesquisa">
+                <ul id="search-results"></ul>
+            </div>
                 <ul id="ul">
                     <li class="li">
                         <a href="#home" class="link">Home</a>
@@ -38,18 +30,22 @@
                         </div>
                         <!--Subdivisão das categorias dos projetos-->
                         <ul id="exibir-categorias">
-                          <li class="linkCat"><a href="" style="color:#ee7f1e;">Educação</a></li>
-                          <li class="linkCat"><a href="" style="color: #c63c3c;">Saúde</a></li>
-                          <li class="linkCat"><a href="" style="color: rgb(43, 174, 226);">Tecnologia</a></li>
-                          <li class="linkCat"><a href="" style="color: #47b433;">Ambiental</a></li>
-                          <li class="linkCat"><a href="" style="color: #e2d638;">Finanças</a></li>
-                          <li class="linkCat"><a href="" style="color: #dd31b2;">Entretenimento</a></li>
-                          <li class="linkCat"><a href="" style="color: #807f7f;">Segurança</a></li>
-                          <li class="linkCat"><a href="" style="color: #815ed8;">Outros</a></li>
+                          <li class="linkCat"><a href="" style="color: rgb(83, 43, 205);">Acadêmicos</a></li>
+                          <li class="linkCat"><a href="" style="color: #a6c715;">Biografias</a></li>
+                          <li class="linkCat"><a href="" style="color: #94147f;">Contos</a></li>
+                          <li class="linkCat"><a href="" style="color: #944e14;">Poesias</a></li>
+                          <li class="linkCat"><a href="" style="color: #cb831e;">Romances</a></li>
+                          <li class="linkCat"><a href="" style="color: #189414;">Motivacionais</a></li>
+                          <li class="linkCat"><a href="" style="color: #6b599f;">Religiosos</a></li>
+                          <li class="linkCat"><a href="" style="color: #0a4726;">Fábulas</a></li>
+                          <li class="linkCat"><a href="" style="color: rgb(216, 24, 168);">Novelas</a></li>
+                          <li class="linkCat"><a href="" style="color: #5e5453;">Suspense</a></li>
+                          <li class="linkCat"><a href="" style="color: #710a78;">Estrangeiro</a></li>
+                          <li class="linkCat"><a href="" style="color: #942114;">Fantasias</a></li>
                         </ul>
                     </li>
                     <li class="li">
-                          <i class="fa-regular fa-star" style="color: rgb(227, 111, 48);"></i>
+                        <i class="fa-regular fa-star" style="color: rgb(227, 111, 48);"></i>
                     </li>
                     <li class="li">
                         <i class="fa-solid fa-cart-shopping" style="color:#807f7f"></i>
@@ -62,9 +58,42 @@
                         </div>
                         <!--Opções para postar, fazer pedido e sair da conta-->
                         <ul id="exibir-opcoes" class="opcoes-menu">
-                          <li class="linkOp"><a href="perfil.html" target="_blank">Anunciar</a></li>
-                          <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
+                            <li class="linkOp"><a href="#" id="anunciarLink">Anunciar</a></li>
+                            <li class="linkOp"><a href="#" onclick="logout()">Sair</a></li>
                         </ul>
+                        
+                        <!-- Pop-up -->
+                        <div id="popup">
+                            <button onclick="fecharPopup()" style="margin-left: 580px; background-color: #942114; color: white; padding: 8px; border-radius: 8px; border: none; cursor: pointer;">X</button>
+                            <h2>Anunciar Produto</h2>
+                            <section class="demanda">
+                                <form id="seu-formulario">
+                                  <div class="titulo-demanda">
+                                    <p style="padding-top: 10px;">Título do livro: </p>
+                                    <input type="text" id="tituloD" placeholder=" " required class="input-demanda">
+                                  </div>
+                                  <div class="descricao-demanda">
+                                    <p>Breve descrição do produto e estado de conservação: </p>
+                                    <textarea id="descricaoD" for="descricao" rows="5" cols="50" class="input-demanda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum quo temporibus amet illo? Minima dolorem, officia est, quia qui aspernatur eius minus iste eos, maxime excepturi quidem fugit autem? </textarea>
+                                  </div>
+                                  <div class="contatos-demanda" style="margin-bottom: 40px;">
+                                    <label for="telefone" style="padding-right: 10px; margin-left: 20px;">Telefone:</label>
+                                    <input type="tel" id="telefone" name="telefone" required><br>
+                                    <label for="email" style="padding-right: 10px;" id="eD">E-mail:</label>
+                                    <input type="email" id="email" name="email" required><br>
+                                  </div>
+                                  <div class="postar-arquivoD">
+                                    <p style="padding-bottom: 10px;">Coloque imagens aqui:</p>
+                                    <form action="" method="post" enctype="multipart/form-data">
+                                      <input type="file" id="arquivo" name="arquivo">
+                                    </form>
+                                  </div>
+                                  <div class="fazer-upload-demanda">
+                                    <button class="btn-demanda">Enviar</button>
+                                  </div>
+                                </form>
+                              </section>
+                        </div>
                       </li>
                 </ul>
         </nav>
@@ -73,11 +102,11 @@
     <main>
         <section class="home" id="home">
           <div class="text-home">
-            <h1>Viaje sem sair de casa</h1>
-            <p>Aqui, economize dinheiro e ganhe conhecimento.</p>
+            <h1>"Conectando Mentes, Compartilhando Livro"</h1>
+            <p style="color: white; font-size: 1.2rem;">Sua plataforma de trocar universitárias literárias.</p>
           </div>
           <div class="img-home">
-            <img src="img-home-pp.png"/>
+            <img src="img-pp-lua.png" style="height: 700px; width: auto;"/>
           </div>
         </section>
 
@@ -87,25 +116,25 @@
                 <div class="grid-item-c">
                     <h6>TÍTULO DO LIVRO</h6>
                     <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
-                    <button>Ver mais</button>
+                    <button><a href="livro.html" style="text-decoration: none; color: white;">Ver mais</a></button>
                 </div>
                 <div class="grid-item-c">
                     <h6>TÍTULO DO LIVRO</h6>
                     <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
-                    <button>Ver mais</button>
+                    <button><a href="livro.html" style="text-decoration: none; color: white;">Ver mais</a></button>
                 </div>
                 <div class="grid-item-c">
                     <h6>TÍTULO DO LIVRO</h6>
                     <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
-                    <button>Ver mais</button>
+                    <button><a href="livro.html" style="text-decoration: none; color: white;">Ver mais</a></button>
                 </div>
                 <div class="grid-item-c">
                     <h6>TÍTULO DO LIVRO</h6>
                     <img src="img-livro-ref.png" class="img-livro" style="height: 150px; padding-bottom: 20px; width: auto;">
-                    <button>Ver mais</button>
+                    <button><a href="livro.html" style="text-decoration: none; color: white;">Ver mais</a></button>
                 </div>
             </div>
-            <p class="btn-vermais" style="background-color: rgb(124, 122, 122); text-align: center; border-radius: 2px; width: 100%; padding: 5px; color: white; font-size: 1rem;">Mais produtos</p>
+            <p class="btn-vermais" style="background-color: rgb(124, 122, 122); text-align: center; border-radius: 2px; width: 100%; padding: 5px; color: white; font-size: 1rem; cursor: pointer">Mais produtos</p>
         </section>
 
         <section class="categorias">

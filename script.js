@@ -88,3 +88,18 @@ linksDoMenu.forEach(function (link) {
 function logout() {
     window.location.href = 'index.html';
 }
+// Função para exibir o pop-up
+function exibirPopup() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+// Função para fechar o pop-up
+function fecharPopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+// Adiciona um evento de clique ao link "Anunciar"
+document.getElementById('anunciarLink').addEventListener('click', function (event) {
+    event.preventDefault(); // Impede a ação padrão do link
+    exibirPopup();
+});
