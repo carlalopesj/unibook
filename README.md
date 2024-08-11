@@ -1,6 +1,6 @@
-# Unibook - Modelagem de Negócios
+# Unibook - Modelagem de Negócios e Gerência de Projetos
 
-O unibook foi um projeto em grupo da minha faculdade, na disciplina de modelagem de negócios, juntamente com Gerência de Projetos, ele consiste em uma plataforma de compra, venda e troca de livros usados para auxiliar os universitários e acadêmicos. O principal objetivo não era de fato a programação do site, mas sim os conceitos envolvendo modelagem de processos, bpmn, a utilização do bizagi, uso do trello, matriz SIPOC, SWOT, entre outros. Atuei como GP (gerente de projeto) e também como desenvolvedora. Todos os processos de modelagem, antes de começar a programar, e alguns dos resultados obtidos, bem como arquivos e métodos utilizados, podem ser visualizados logo abaixo:
+O unibook foi um projeto em grupo da minha faculdade, na disciplina de modelagem de negócios, juntamente com gerência de projetos, ele consiste em uma plataforma de compra, venda e troca de livros usados para auxiliar os universitários e acadêmicos. O principal objetivo não era de fato a programação do site, mas sim os conceitos envolvendo modelagem de processos, bpmn, a utilização do bizagi, uso do trello, matriz SIPOC, SWOT, entre outros. Atuei como GP (gerente de projeto) e também como desenvolvedora. Todos os processos de modelagem, antes de começar a programar, e alguns dos resultados obtidos, bem como arquivos e métodos utilizados, podem ser visualizados logo abaixo:
 
 OBS: a plataforma não está responsiva, e não está "funcional", dado que o foco não era no site em si, mas sim no seu processo de desenvolvimento.
 
