@@ -1,6 +1,10 @@
-# Unibook
+# Unibook - Modelagem de Negócios
 
 O unibook foi um projeto em grupo da minha faculdade, na disciplina de modelagem de negócios, juntamente com Gerência de Projetos, ele consiste em uma plataforma de compra, venda e troca de livros usados para auxiliar os universitários e acadêmicos. O principal objetivo não era de fato a programação do site, mas sim os conceitos envolvendo modelagem de processos, bpmn, a utilização do bizagi, uso do trello, matriz SIPOC, SWOT, entre outros. Atuei como GP (gerente de projeto) e também como desenvolvedora. Todos os processos de modelagem, antes de começar a programar, e alguns dos resultados obtidos, bem como arquivos e métodos utilizados, podem ser visualizados logo abaixo:
+
+OBS: a plataforma não está responsiva, e não está "funcional", dado que o foco não era no site em si, mas sim no seu processo de desenvolvimento.
+
+Para visualizar o site por completo, clique [aqui](https://carlalopesj.github.io/unibook/)
 
 Slide para aprensentação do tema escolhido e do Unibook em si: [Apresentação.pdf](https://github.com/user-attachments/files/16576305/carla_grupo6.pdf)
 
@@ -25,9 +29,8 @@ Diagramas de mapeamento utilizando o Bizagi Modeler, foram feitos diversas vers�
 E por fim, o resultado final do mapeamento:
 ![Mapeamento Unibook 3 0](https://github.com/user-attachments/assets/a1455bf4-a629-4b60-8a96-4483936736c6)
 
-OBS: a plataforma não está responsiva, e não está "funcional", dado que o foco não era no site em si, mas si no seu processo de desenvolvimento.
-
+Algumas imagens do website:
 ![unibook-homepage](https://github.com/user-attachments/assets/9a6e39a6-6419-46b3-b12c-8d9719eedd6d)
 ![unibook-produto](https://github.com/user-attachments/assets/8d00f4e3-b983-485b-9180-932e1cd590a9)
 
-Para visualizar o site por completo, clique [aqui](https://carlalopesj.github.io/unibook/)
+Para visualizá-lo por completo, clique [aqui](https://carlalopesj.github.io/unibook/)
